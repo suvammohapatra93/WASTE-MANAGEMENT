@@ -1,35 +1,9 @@
 import React from 'react'
-
+import Navbar from './Navbar'
 const Home = () => {
   return (
     <>
-    <section className="bg-gray-800 text-white py-4 fixed top-0 w-full">
-  <nav className="container mx-auto flex justify-between items-center ">
-    <div className="text-2xl font-bold">C&D Waste Management System</div>
-    <ul className="flex space-x-6 my-1.5">
-      <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded">
-        <a href="/classifier">Classifier</a>
-      </li>
-      <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded">
-        <a href="/marketplace">Marketplace</a>
-      </li>
-      <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded">
-        <a href="/recycling-facilities">Recycling Facilities</a>
-      </li>
-      <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded mr-10">
-        <a href="/about-us">About Us</a>
-      </li>
-      <li>
-        <div className="flex items-center bg-amber-800 text-white mr-10 px-2 py-1 rounded-full">
-          <span>Sign in</span>
-          <img src="/user.png" alt="User Icon" className="ml-2 w-10 h-10 rounded-full"/>
-        </div>
-      </li>
-    </ul>
-  </nav>
-</section>
-
-   
+    <Navbar/>
     <section className="bg-gray-200 text-gray-900 pt-40 pb-10">
       <div className="container mx-auto text-center">
         <h1 className="text-5xl font-bold mb-8">Transforming Construction Waste into Sustainable Solutions</h1>
@@ -43,7 +17,7 @@ const Home = () => {
         <p className="text-xl mb-4">
           Discover how we are solving the waste management problem in construction. Our platform leverages AI technology to categorize construction waste, provide recycling solutions, and create a digital marketplace for buying and selling recycled materials. By integrating advanced recycling methods and geolocation-based services, we help locate nearby recycling centers for proper waste disposal and management. Join us in our mission to create a sustainable future in the construction industry.
         </p>
-        <a href="https://drive.google.com/drive/folders/YOUR_DRIVE_LINK" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Read Full Abstract</a>
+        <a href="./Abstract.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Read Full Abstract</a>
       </div>
     </section>
     

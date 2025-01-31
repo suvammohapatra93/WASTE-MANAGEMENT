@@ -1,10 +1,12 @@
-import React,{useState} from "react";
+import React,{useContext, useState} from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { handleerror,handlesuccess } from "../utils";
+import { AuthContext } from "../Context/AuthContext.jsx";
 const Login = () => {
     const navigate = useNavigate()
+    const {isAuthenticated,setIsAuthenticated} = useContext(AuthContext)
   const [logininfo, setlogininfo] = useState({
     email:"",
     password:""
@@ -40,6 +42,8 @@ const Login = () => {
          handlesuccess(message)
          localStorage.setItem('token',jwttoken)
          localStorage.setItem('loggedinuser',name)
+        setIsAuthenticated(true)
+        console.log(isAuthenticated)
         setTimeout(() => {
             console.log("Navigating to /");
           navigate('/')
@@ -56,6 +60,7 @@ const Login = () => {
       handleerror(err)
     }
   }
+  
   return (
     <>
       <div className="h-screen md:flex">

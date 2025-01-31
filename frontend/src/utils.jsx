@@ -11,3 +11,9 @@ export const handleerror = (msg)=>{
         position:"top-right"
     })
 }
+
+export const intermediate = (msg)=>{
+    toast.info(msg,{
+        position:"top-right"
+    })
+}

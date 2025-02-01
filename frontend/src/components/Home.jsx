@@ -17,7 +17,10 @@ const Home = () => {
         <p className="text-xl mb-4">
           Discover how we are solving the waste management problem in construction. Our platform leverages AI technology to categorize construction waste, provide recycling solutions, and create a digital marketplace for buying and selling recycled materials. By integrating advanced recycling methods and geolocation-based services, we help locate nearby recycling centers for proper waste disposal and management. Join us in our mission to create a sustainable future in the construction industry.
         </p>
-        <a href="./Abstract.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Read Full Abstract</a>
+        <a href="./Abstract.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-lg hover:text-blue-700 transform hover:scale-105 transition-all duration-300">
+  Read Full Abstract
+</a>
+
       </div>
     </section>
     

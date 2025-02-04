@@ -137,12 +137,6 @@ const Marketplace = () => {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-10">
         <div className="container mx-auto text-center">
-          <ul className="flex justify-center space-x-6 mb-4">
-            <li><a href="/classifier" className="hover:underline">Classifier</a></li>
-            <li><a href="/marketplace" className="hover:underline">Marketplace</a></li>
-            <li><a href="/recycling-facilities" className="hover:underline">Recycling Facilities</a></li>
-            <li><a href="/about-us" className="hover:underline">About Us</a></li>
-          </ul>
           <div className="mb-4">
             <p>Contact us: info@cdwastemanagement.com</p>
           </div>

@@ -6,7 +6,7 @@ import Signup from "./components/Signup";
 import AboutUs from "./components/AboutUs"; 
 import RefreshHandler from "./RefreshHandler";
 import Classifier from "./components/Classifier";
-
+import RecyclingFacilities from "./components/RecyclingFacilities";
 function App() {
   return (
     <>
@@ -15,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/classifier" element={<Classifier/>}/>
         <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/recycling-facilities" element={<RecyclingFacilities />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/about-us" element={<AboutUs />} /> 

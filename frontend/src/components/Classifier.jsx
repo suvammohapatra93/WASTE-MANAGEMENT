@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from './Navbar';
 
 const Classifier = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -35,7 +36,9 @@ const Classifier = () => {
   
 
   return (
-    <div className="max-w-2xl mx-auto mt-20 p-6 bg-white shadow-lg rounded-lg">
+    <>
+    <Navbar/>
+    <div className="max-w-2xl mx-auto mt-36 p-6 bg-white shadow-lg rounded-lg ">
       <h1 className="text-3xl font-bold mb-6 text-center text-green-600">
         Waste Classifier ♻️
       </h1>
@@ -91,6 +94,7 @@ const Classifier = () => {
         </ul>
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,22 +1,25 @@
-
 import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import Navbar from "./Navbar";
 
 const RecyclingFacilities = () => {
     const [location, setLocation] = useState(null);
+    const [facilities, setFacilities] = useState([]);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
                 (position) => {
-                    setLocation({
+                    const userLocation = {
                         lat: position.coords.latitude,
                         lng: position.coords.longitude,
-                    });
+                    };
+                    setLocation(userLocation);
+                    fetchRecyclingFacilities(userLocation);
                 },
-                (error) => {
+                () => {
                     setError("Geolocation not supported or permission denied");
                 }
             );
@@ -25,8 +28,27 @@ const RecyclingFacilities = () => {
         }
     }, []);
 
+    const fetchRecyclingFacilities = async (userLocation) => {
+        try {
+            const response = await fetch(
+                `http://localhost:8080/recycle?lat=${userLocation.lat}&lng=${userLocation.lng}`
+            );
+            const data = await response.json();
+            console.log(data);
+            if (data.results) {
+                setFacilities(data.results);
+            } else {
+                setError("No recycling facilities found");
+            }
+        } catch (error) {
+            setError("Failed to fetch recycling facilities");
+        }
+    };
+
     return (
-        <div className="p-6 bg-gray-100 min-h-screen">
+        <>
+        <Navbar/>
+        <div className="p-6 bg-gray-100 min-h-screen mt-24">
             <h1 className="text-3xl font-bold mb-4">Recycling Facilities</h1>
             <p className="mb-6 text-gray-600">
                 Locate nearby recycling centers to properly dispose of waste.
@@ -44,11 +66,23 @@ const RecyclingFacilities = () => {
                     <Marker position={[location.lat, location.lng]}>
                         <Popup>Your Location</Popup>
                     </Marker>
+                    {facilities.map((facility, index) => (
+                        <Marker
+                            key={index}
+                            position={[
+                                facility.geometry.location.lat,
+                                facility.geometry.location.lng,
+                            ]}
+                        >
+                            <Popup>{facility.name}</Popup>
+                        </Marker>
+                    ))}
                 </MapContainer>
             ) : (
                 <p>Fetching location...</p>
             )}
         </div>
+        </>
     );
 };
 

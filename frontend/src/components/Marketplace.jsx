@@ -197,6 +197,20 @@ const Marketplace = () => {
           )}
         </div>
       </section>
+
+      {/* Footer */}
+    <footer className="bg-gray-800 text-white py-10">
+        <div className="container mx-auto text-center">
+          <div className="mb-4">
+            <p>Contact us: info@cdwastemanagement.com</p>
+          </div>
+          <div className="flex justify-center space-x-4">
+            <a href="#" className="hover:underline">Facebook</a>
+            <a href="#" className="hover:underline">Twitter</a>
+            <a href="#" className="hover:underline">LinkedIn</a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };

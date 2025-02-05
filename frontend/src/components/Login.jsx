@@ -36,16 +36,13 @@ const Login = () => {
         }
       )
       const result = await response.json();
-      console.log(result)
       const{success,message,jwttoken,name,error} = result
-      if(success){
-         handlesuccess(message)
+      if(success){       
          localStorage.setItem('token',jwttoken)
          localStorage.setItem('loggedinuser',name)
         setIsAuthenticated(true)
-        console.log(isAuthenticated)
-        setTimeout(() => {
-            console.log("Navigating to /");
+        handlesuccess(message)
+        setTimeout(() => {        
           navigate('/')
         }, 1000);
       }else if(error){

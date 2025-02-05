@@ -8,7 +8,7 @@ import { ToastContainer } from 'react-toastify';
 const Navbar = () => {
   const navigate = useNavigate();
   const { isAuthenticated, setIsAuthenticated } = useContext(AuthContext);
-  console.log("isAuthenticated:", isAuthenticated);
+  
 
   const handlenavigation = (path) => {
     if (isAuthenticated) {
@@ -36,16 +36,16 @@ const Navbar = () => {
           <Link to="/" className="text-2xl font-bold">C&D Waste Management System</Link>
 
           <ul className="flex space-x-6 my-1.5">
-            <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded" onClick={() => handlenavigation('/classifier')}>
+            <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded cursor-pointer" onClick={() => handlenavigation('/classifier')}>
               Classifier
             </li>
-            <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded" onClick={() => handlenavigation('/marketplace')}>
+            <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded cursor-pointer" onClick={() => handlenavigation('/marketplace')}>
               Marketplace
             </li>
-            <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded" onClick={() => handlenavigation('/recycling-facilities')}>
+            <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded cursor-pointer" onClick={() => handlenavigation('/recycling-facilities')}>
               Recycling Facilities
             </li>
-            <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded mr-10" onClick={() => handlenavigation('/about-us')}>
+            <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded mr-10 cursor-pointer" onClick={() => handlenavigation('/about-us')}>
               About Us
             </li>
 

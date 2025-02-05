@@ -95,7 +95,7 @@ const Classifier = () => {
       </div>
     </div>
     {/* Footer */}
-    <footer className="bg-gray-800 text-white py-10">
+    <footer className="bg-gray-800 text-white py-4">
         <div className="container mx-auto text-center">
           <div className="mb-4">
             <p>Contact us: info@cdwastemanagement.com</p>

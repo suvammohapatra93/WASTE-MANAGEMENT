@@ -30,12 +30,16 @@ const Navbar = () => {
 
   return (
     <>
-      <section className="bg-gray-800 text-white py-4 fixed top-0 w-full">
-        <nav className="container mx-auto flex justify-between items-center">
+      <section className="bg-gray-800 text-white  fixed top-0 w-full ">
+        <nav className="container mx-auto flex justify-between items-center px-4 py-1">
           {/* Clickable Home Link */}
-          <Link to="/" className="text-2xl font-bold">C&D Waste Management System</Link>
+          <Link to="/" className="text-2xl font-bold flex items-center space-x-2">
+  <img src="./logo.png" className="h-20 transition-transform duration-300 hover:scale-110" />
+  <span>C&D Waste Connect</span>
+</Link>
 
-          <ul className="flex space-x-6 my-1.5">
+
+          <ul className="flex space-x-6 ">
             <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-2 rounded cursor-pointer" onClick={() => handlenavigation('/classifier')}>
               Classifier
             </li>

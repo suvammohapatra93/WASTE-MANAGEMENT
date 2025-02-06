@@ -54,7 +54,7 @@ const Navbar = () => {
             <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-4 md:px-2 rounded cursor-pointer" onClick={() => handlenavigation('/marketplace')}>Marketplace</li>
             <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-4 md:px-2 rounded cursor-pointer" onClick={() => handlenavigation('/recycling-facilities')}>Recycling Facilities</li>
             <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-4 md:px-2 rounded cursor-pointer" onClick={() => handlenavigation('/about-us')}>About Us</li>
-
+            <li className="hover:bg-gray-700 hover:bg-opacity-50 py-2 px-4 md:px-2 rounded cursor-pointer" onClick={() => handlenavigation('/futureplans')}>Future</li>
             {/* Authentication Section */}
             <li>
               {isAuthenticated ? (

@@ -9,6 +9,7 @@ import Classifier from "./components/Classifier";
 import RecyclingFacilities from "./components/RecyclingFacilities";
 import Checkout from "./components/Checkout";
 import Success from "./components/Success";
+import FuturePlans from "./components/Futureplans";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/recycling-facilities" element={<RecyclingFacilities />} />
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/success" element={<Success />} />
+        <Route path="/futureplans" element={<FuturePlans/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/about-us" element={<AboutUs />} /> 

@@ -11,94 +11,98 @@ const AboutUs = () => {
       <section className="bg-gray-200 text-gray-900 pt-24 pb-10 min-h-screen mt-10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl bg-white p-8 rounded-2xl shadow-lg mx-auto">
-            <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
+            <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
               About Us
             </h1>
-            <p className="text-gray-600 text-lg mb-4">
-              At C&D Waste Connect, we are dedicated to revolutionizing
-              construction waste management with smart, AI-powered solutions.
-              Our mission is to minimize environmental impact by promoting
-              efficient recycling and reuse of construction and demolition
-              materials.
-            </p>
 
-            {/* Our Vision Section */}
-            <h2 className="text-2xl font-semibold text-gray-700 mt-6">
-              Our Vision
-            </h2>
-            <p className="text-gray-600 text-lg mt-2">
-              Our vision is to lead the construction industry towards zero waste
-              by leveraging AI-driven solutions for a greener, more sustainable
-              future.
-            </p>
+            {/* About Us Section */}
+            <div className="mt-10 p-6 bg-gray-100 rounded-lg shadow-md">
+              <p className="text-gray-600 text-lg leading-relaxed">
+                At C&D Waste Connect, we are dedicated to revolutionizing
+                construction waste management with smart, AI-powered solutions.
+                Our mission is to minimize environmental impact by promoting
+                efficient recycling and reuse of construction and demolition
+                materials.
+              </p>
+            </div>
 
-            {/* Why Choose Us Section */}
-            <h2 className="text-2xl font-semibold text-gray-700 mt-6">
-              Why Choose Us
-            </h2>
-            <p className="text-gray-600 text-lg mt-2">
-              We combine AI-driven innovation with sustainable practices to help
-              construction companies reduce waste, cut costs, and build a
-              greener future.
-            </p>
+            <div className="space-y-6 mt-6">
+              <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+                <h2 className="text-2xl font-semibold text-gray-700">Our Vision</h2>
+                <p className="text-gray-600 text-lg mt-2 leading-relaxed">
+                  Our vision is to lead the construction industry towards zero waste
+                  by leveraging AI-driven solutions for a greener, more sustainable
+                  future.
+                </p>
+              </div>
 
-            {/* Our Commitment Section */}
-            <h2 className="text-2xl font-semibold text-gray-700 mt-6">
-              Our Commitment
-            </h2>
-            <p className="text-gray-600 text-lg mt-2">
-              We are committed to driving a zero-waste future by empowering
-              businesses with smart, sustainable waste management solutions.
-            </p>
+              <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+                <h2 className="text-2xl font-semibold text-gray-700">Why Choose Us</h2>
+                <p className="text-gray-600 text-lg mt-2 leading-relaxed">
+                  We combine AI-driven innovation with sustainable practices to help
+                  construction companies reduce waste, cut costs, and build a
+                  greener future.
+                </p>
+              </div>
 
-            {/* Join Our Mission Section */}
-            <h2 className="text-2xl font-semibold text-gray-700 mt-6">
-              Join Our Mission
-            </h2>
-            <p className="text-gray-600 text-lg mt-2">
-              Be a part of the movement towards a cleaner planet—partner with us
-              to make sustainable construction the new industry standard.
-            </p>
+              <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+                <h2 className="text-2xl font-semibold text-gray-700">Our Commitment</h2>
+                <p className="text-gray-600 text-lg mt-2 leading-relaxed">
+                  We are committed to driving a zero-waste future by empowering
+                  businesses with smart, sustainable waste management solutions.
+                </p>
+              </div>
+            </div>
 
-            <h2 className="text-2xl font-semibold text-gray-700 mt-6">
-              Our Target
-            </h2>
-            <p className="text-gray-600 text-lg mt-2">
-              We aim to empower small and medium-sized construction companies
-              with cutting-edge tools to manage their waste effectively, reduce
-              landfill use, and foster a sustainable circular economy.
-            </p>
+            {/* Terms and Conditions Section */}
+            <div className="mt-10 p-6 bg-gray-100 rounded-lg shadow-md">
+              <h2 className="text-2xl font-semibold text-gray-700">Terms and Conditions</h2>
+              <p className="text-gray-600 text-lg mt-2 leading-relaxed">
+                By using our services, you agree to comply with our waste management
+                policies and ethical guidelines. Unauthorized use of our platform
+                for improper disposal practices is strictly prohibited. We reserve
+                the right to update our terms as needed.
+              </p>
+            </div>
 
-            <h2 className="text-2xl font-semibold text-gray-700 mt-6">
-              Waste Recycled
-            </h2>
-            <p className="text-gray-600 text-lg mt-2">
-              Our platform has successfully facilitated the recycling of
-              thousands of tons of construction waste, significantly reducing
-              carbon emissions and paving the way for a greener future.
-            </p>
+            {/* FAQ Section */}
+            <div className="mt-10 p-6 bg-gray-100 rounded-lg shadow-md">
+              <h2 className="text-2xl font-semibold text-gray-700">Frequently Asked Questions</h2>
+              <div className="mt-4">
+                <h3 className="text-xl font-semibold text-gray-800">How can I start using C&D Waste Connect?</h3>
+                <p className="text-gray-600 mt-2">Simply sign up on our platform and explore our waste management solutions tailored for your needs.</p>
+              </div>
+              <div className="mt-4">
+                <h3 className="text-xl font-semibold text-gray-800">Is there a cost associated with your services?</h3>
+                <p className="text-gray-600 mt-2">We offer both free and premium plans based on your waste management requirements.</p>
+              </div>
+              <div className="mt-4">
+                <h3 className="text-xl font-semibold text-gray-800">How does AI help in waste management?</h3>
+                <p className="text-gray-600 mt-2">Our AI technology optimizes waste sorting, tracking, and recycling to improve efficiency and reduce environmental impact.</p>
+              </div>
+            </div>
 
-            <h2 className="text-2xl font-semibold text-gray-700 mt-6">
-              Contact Us
-            </h2>
-            <p className="text-gray-600 text-lg mt-2">
-              For inquiries or partnerships, please reach out to us. Together,
-              we can build a sustainable future.
-            </p>
-            <div className="mt-4 text-center">
-              <a
-                href="mailto:info@cdwasteconnect.com"
-                className="text-blue-600 font-semibold hover:underline"
-              >
-                info@cdwasteconnect.com
-              </a>
+            <div className="mt-10 p-6 bg-gray-100 rounded-lg shadow-md">
+              <h2 className="text-2xl font-semibold text-gray-700">Contact Us</h2>
+              <p className="text-gray-600 text-lg mt-2 leading-relaxed">
+                For inquiries or partnerships, please reach out to us. Together,
+                we can build a sustainable future.
+              </p>
+              <div className="mt-4 text-center">
+                <a
+                  href="mailto:info@cdwasteconnect.com"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                  info@cdwasteconnect.com
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-10">
+      <footer className="bg-gray-800 text-white py-10 mt-10">
         <div className="container mx-auto text-center">
           <div className="mb-4">
             <p>Contact us: info@cdwastemanagement.com</p>

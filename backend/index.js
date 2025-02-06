@@ -13,6 +13,7 @@ connectDB()
 
 app.use(bodyParser.json())
 app.use(cors())
+app.get('/', (req, res) => res.send('Hello from Node.js Backend!'));
 app.use('/auth',AuthRouter)
 app.use('/recycle',RecycleRouter)
 app.use('/payment',PaymentRouter)
